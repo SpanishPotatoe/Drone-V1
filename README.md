@@ -14,5 +14,18 @@ Outline --
 * Contact father, set up dev spot
 
 Note -- 
+* Var -> variable; defines object
+* types -> context of var
+          1. number : ex. 1, 230, -1
+          2. string : ex. "1" 
+* If statements -> a function based on conditions, if met does A, if not (else) does B
+* functions -> performs an action
+* arguements -> specifications within brackets, eliminates repeating
+* Return -> calls on a function
+* Arrays -> List of items
+* Loops -> while / do / for : runs continuous function
 
 Misc --
+Java works in context from top to bottom (not pulling from spot to spot)
+D.R.Y. -> Do not Repeat Yourself
+comparisions with values : < less than; > greater than; <= less than or equal; >= greater than or equal; != not equal 
