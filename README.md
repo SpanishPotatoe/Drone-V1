@@ -28,4 +28,7 @@ Note --
 Misc --
 Java works in context from top to bottom (not pulling from spot to spot)
 D.R.Y. -> Do not Repeat Yourself
-comparisions with values : < less than; > greater than; <= less than or equal; >= greater than or equal; != not equal 
+comparisions with values : < less than; > greater than; <= less than or equal; >= greater than or equal; != not equal
+
+Node js. Version 6.11.1
+NPM Version 3.10.10
