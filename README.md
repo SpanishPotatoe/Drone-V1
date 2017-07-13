@@ -32,5 +32,3 @@ comparisions with values : < less than; > greater than; <= less than or equal; >
 
 Node js. Version 6.11.1
 NPM Version 3.10.10
-
-fuck this
