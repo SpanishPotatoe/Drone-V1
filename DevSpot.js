@@ -1,4 +1,5 @@
-//Copyright2017 Daniel Cardona
+//Eat a pie
+
 //Find out how to build Drone-V1
 
 //Helo
