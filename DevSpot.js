@@ -11,7 +11,7 @@ var board = new five.Board();
 //Test code for Arduino : LED Hello world
 // -  var led = new five.Led(13);
 // - led.blink(500);
-});
+//});
 
 //Test code for Arduino : LED
 board.on("ready", function() {
