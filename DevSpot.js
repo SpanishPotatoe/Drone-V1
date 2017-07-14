@@ -14,9 +14,6 @@ var board = new five.Board();
 });
 
 //Test code for Arduino : LED
-var five = require("johnny-five");
-var board = new five.Board();
-
 board.on("ready", function() {
   var led = new five.Led(13);
 
