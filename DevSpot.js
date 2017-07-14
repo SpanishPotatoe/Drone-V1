@@ -3,7 +3,7 @@
 
 //components : arduino board - wire board - 2 motors - 2 LED's
 
-// When in test silence other commands i.e. LED Hello world = active, LED disabled
+// When in test silence other commands i.e. LED Hello world = active, LED = disabled
 
 
 //Johnny Five board setup
