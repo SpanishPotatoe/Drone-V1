@@ -1,4 +1,4 @@
 
-function Bob(a+b){
+function Bob(a, b){
   return (a+b);
 }
