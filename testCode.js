@@ -13,7 +13,8 @@ if(Maul <=0) {return 'Sector clear...'
   }
 }
 
-console.log( clearSector(0)
- '* Darth Maul shreks clone'
-              clearSector(1)
-);
+console.log( clearSector(0));
+
+console.log( '* Darth Maul shreks clone')
+
+console.log(( clearSector(1)))
