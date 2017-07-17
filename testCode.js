@@ -6,10 +6,10 @@ function Bob(a,b){
 console.log(Bob(1,2), Bob(3050,28), Bob('Daniel ','Cardona'), Bob('Daniel ','is awesome!'));
 
 function PacMan(ghost) {
-if(ghost <= 1) {return 'Holy crap Batman!'
+if(ghost <= 1) {return 'Holy console Batman! We are safe!'
  } else {
   return 'Its a trap!'
   }
 }
 
-console.log( PacMan(1) );
+console.log( PacMan(3) );
