@@ -5,11 +5,12 @@ function Bob(a,b){
 
 console.log(Bob(1,2), Bob(3050,28), Bob('Daniel ','Cardona'), Bob('Daniel ','is awesome!'));
 
-function PacMan(ghost) {
-if(ghost <= 1) {return 'Holy console Batman! We are safe!'
+
+function clearSector(Maul) {
+if(Maul <=0) {return 'Sector clear'
  } else {
-  return 'Its a trap!'
+  return 'NOT CLEAR! NOT CLEAR!!'
   }
 }
 
-console.log( PacMan(3) );
+console.log( clearSector(0) );
