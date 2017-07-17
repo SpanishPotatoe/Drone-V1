@@ -7,4 +7,4 @@ console.log(Bob(1,2));
 
 console.log(Bob(3050,28));
 
-console.log(Bob("Daniel ","Cardona"))
+console.log(Bob("Daniel ","Cardona"));
