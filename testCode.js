@@ -12,4 +12,4 @@ if(ghost <= 1) {return 'Holy crap Batman!'
   }
 }
 
-console.log( ghost(1) );
+console.log( Pacman(1) );
