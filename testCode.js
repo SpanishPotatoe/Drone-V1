@@ -7,7 +7,7 @@ function Bob(a,b){
 
 
 function clearSector(Maul) {
-if(Maul <=0) {return 'Sector clear'
+if(Maul <=0) {return 'Sector clear...'
  } else {
   return 'NOT CLEAR! NOT CLEAR!!'
   }
