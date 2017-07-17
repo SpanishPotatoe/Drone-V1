@@ -1,2 +1,6 @@
 
-console.log(1)
+console.function add(a,b) {
+  return a+b
+}
+
+console.add
