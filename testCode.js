@@ -3,7 +3,7 @@ function Bob(a,b){
   return (a+b);
 }
 
-console.log(Bob(1,2), Bob(3050,28), Bob('Daniel ','Cardona'), Bob('Daniel ','is awesome!'));
+//console.log(Bob(1,2), Bob(3050,28), Bob('Daniel ','Cardona'), Bob('Daniel ','is awesome!'));
 
 
 function clearSector(Maul) {
@@ -13,4 +13,4 @@ if(Maul <=0) {return 'Sector clear'
   }
 }
 
-console.log( clearSector(1) );
+console.log( clearSector(0) , clearSector(1) );
