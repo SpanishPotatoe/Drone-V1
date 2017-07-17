@@ -13,4 +13,4 @@ if(Maul <=0) {return 'Sector clear...'
   }
 }
 
-console.log( clearSector(0) , clearSector(1) );
+console.log( clearSector(0));
