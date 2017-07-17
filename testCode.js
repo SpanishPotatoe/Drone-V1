@@ -1,4 +1,4 @@
 
-console.function bob(a,b) {
-  return a+b;
+console.log function Bob(a+b){
+  return (a+b);
 }
