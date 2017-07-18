@@ -21,11 +21,6 @@ var board = new five.Board();
 
 
 // LED pulse function
-board.on("ready", function() {
-  var array = new five.Leds([3, 5]);
-
-//  array.pulse();
-});
 
 // LED REPL commands
 
