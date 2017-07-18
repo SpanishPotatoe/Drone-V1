@@ -80,8 +80,8 @@ board.on("ready", function() {
 
   this.repl.inject({
     matrix: matrix,
-    // Type "heart()" in the REPL to
-    // display a heart!
+    // Type "hi()" in the REPL to
+    // display a "hi"!
     hi: function() {
       matrix.draw(hi);
     }
