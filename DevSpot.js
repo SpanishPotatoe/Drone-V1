@@ -69,7 +69,7 @@ board.on("ready", function() {
 
   matrix.on();
 
-  var msg = "send nudes".split("");
+  var msg = "Hel l o Daniel".split("");
 
   // Display each letter for 1 second
   function next() {
