@@ -45,3 +45,13 @@ board.on("ready", function() {
     }
   });
 });
+
+board.on("ready", function() {
+  var led = new five.Led(13);
+  led.on();
+
+
+  this.on("exit", function() {
+    led.off();
+  });
+});
