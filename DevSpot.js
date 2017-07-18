@@ -32,7 +32,7 @@ board.on("ready", function() {
 board.on("ready", function() {
   console.log("Ready event. Repl instance auto-initialized!");
 
-  var led = new five.Led(13);
+  var led = new five.Led( [3,5]);
 
   this.repl.inject({
     // Allow limited on/off control access to the
