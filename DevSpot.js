@@ -73,8 +73,8 @@ board.on("ready", function() {
     matrix: matrix,
     // Type "heart()" in the REPL to
     // display a heart!
-    heart: function() {
-      matrix.draw(heart);
+    hi: function() {
+      matrix.draw(hi);
     }
   });
 });
