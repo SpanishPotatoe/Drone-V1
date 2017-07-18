@@ -92,14 +92,7 @@ board.on("ready", function() {
     },
     hi: function() {
       matrix.draw(hi);
-    }
-
-  });
-
-  this.repl.inject({
-    matrix: matrix,
-    // Type "moon()" in the REPL to
-    // display a "hi"!
+    },
     moon: function() {
       matrix.draw(moon);
     }
