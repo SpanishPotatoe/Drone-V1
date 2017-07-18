@@ -42,8 +42,8 @@ board.on("ready", function() {
   var matrix = new five.Led.Matrix({
     pins: {
       data: 2,
-      clock: 3,
-      cs: 4
+      clock: 4,
+      cs: 3
     }
   });
 
