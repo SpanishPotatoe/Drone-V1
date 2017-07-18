@@ -16,13 +16,13 @@
 // When in test silence other commands i.e. LED Hello world = active, LED = disabled
 
 
-//Johnny Five board setup
-var five = require("johnny-five");
-var board = new five.Board();
-
-//Test code for Arduino : LED Hello world
+var five = require("johnny-five"),
+    board = new five.Board();
 
 board.on("ready", function() {
+  // Create an Led on pin 13
   var led = new five.Led(13);
-  led.blink(500);
+
+  // Strobe the pin on/off, defaults to 100ms phases
+  led.strobe();
 });
