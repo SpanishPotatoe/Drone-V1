@@ -75,6 +75,14 @@ board.on("ready", function() {
     // display a heart!
     heart: function() {
       matrix.draw(heart);
+    }
+  });
+
+  this.repl.inject({
+    matrix: matrix,
+    // Type "heart()" in the REPL to
+    // display a heart!
+    hi: function() {
       matrix.draw(hi);
     }
   });
