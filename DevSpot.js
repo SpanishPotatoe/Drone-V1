@@ -19,12 +19,6 @@
 var five = require("johnny-five");
 var board = new five.Board();
 
-
-// LED pulse function
-
-
-// LED REPL commands
-
 //LED Matrix
 board.on("ready", function() {
 
