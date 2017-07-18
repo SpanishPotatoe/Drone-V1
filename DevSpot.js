@@ -43,7 +43,7 @@ board.on("ready", function() {
 
   matrix.on();
 
-  var msg = "johnny-five".split("");
+  var msg = "Hel lo Daniel".split("");
 
   // Display each letter for 1 second
   function next() {
