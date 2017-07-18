@@ -104,6 +104,6 @@ board.on("ready", function() {
     // display a "hi"!
     moon: function() {
       matrix.draw(moon);
-    }
+    });
 
 });
