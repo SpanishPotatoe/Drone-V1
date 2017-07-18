@@ -22,6 +22,9 @@ var board = new five.Board();
 //LED Matrix
 board.on("ready", function() {
 
+//List of objects for Matrix
+
+ list[
   var heart = [
     "01100110",
     "10011001",
@@ -54,7 +57,7 @@ board.on("ready", function() {
     "11111111",
     "00011000"
   ];
-
+]
 
   var matrix = new five.Led.Matrix({
     pins: {
@@ -66,7 +69,7 @@ board.on("ready", function() {
 
   matrix.on();
 
-  var msg = "Hel lo Daniel".split("");
+  var msg = "send nudes".split("");
 
   // Display each letter for 1 second
   function next() {
