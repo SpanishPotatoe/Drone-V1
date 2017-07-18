@@ -89,16 +89,11 @@ board.on("ready", function() {
     // display a heart!
     heart: function() {
       matrix.draw(heart);
-    }
-  });
-
-  this.repl.inject({
-    matrix: matrix,
-    // Type "hi()" in the REPL to
-    // display a "hi"!
+    },
     hi: function() {
       matrix.draw(hi);
     }
+
   });
 
   this.repl.inject({
