@@ -21,18 +21,14 @@ var board = new five.Board();
 
 
 // LED pulse function
-board.on("ready", function() {
-  var array = new five.Leds([3, 5]);
 
-  array.pulse();
-});
 
 // LED REPL commands
 
 board.on("ready", function() {
   console.log("Ready event. Repl instance auto-initialized!");
 
-  var led = new five.Led(13);
+  var led = new five.Led(13 [3, 5]);
 
   this.repl.inject({
     // Allow limited on/off control access to the
