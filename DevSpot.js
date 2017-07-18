@@ -33,6 +33,18 @@ board.on("ready", function() {
     "00000000"
   ];
 
+  var hi = [
+    "10010000",
+    "10010010",
+    "11110000",
+    "10010010",
+    "10010010",
+    "00000000",
+    "00000000",
+    "00000000"
+  ];
+
+
   var matrix = new five.Led.Matrix({
     pins: {
       data: 2,
@@ -63,6 +75,9 @@ board.on("ready", function() {
     // display a heart!
     heart: function() {
       matrix.draw(heart);
+
+      hi: function() {
+        matrix.draw(hi);
     }
   });
 });
