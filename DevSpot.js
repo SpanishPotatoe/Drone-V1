@@ -76,8 +76,5 @@ board.on("ready", function() {
     heart: function() {
       matrix.draw(heart);
     }
-    hi: function() {
-      matrix.draw(hi);
-    }
   });
 });
