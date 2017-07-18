@@ -24,7 +24,7 @@ board.on("ready", function() {
 
 //List of objects for Matrix
 
- list[
+
   var heart = [
     "01100110",
     "10011001",
@@ -57,7 +57,7 @@ board.on("ready", function() {
     "11111111",
     "00011000"
   ];
-]
+
 
   var matrix = new five.Led.Matrix({
     pins: {
