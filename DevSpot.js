@@ -25,23 +25,6 @@ var board = new five.Board();
 
 // LED REPL commands
 
-board.on("ready", function() {
-  console.log("Ready event. Repl instance auto-initialized!");
-
-  var led = new five.Led([3, 5]);
-
-  this.repl.inject({
-    // Allow limited on/off control access to the
-    // Led instance from the REPL.
-    on: function() {
-      led.on();
-    },
-    off: function() {
-      led.off();
-    }
-  });
-});
-
 //LED Matrix
 board.on("ready", function() {
 
