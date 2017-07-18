@@ -44,6 +44,17 @@ board.on("ready", function() {
     "00000000"
   ];
 
+  var moon = [
+    "00000000",
+    "00011000",
+    "00001100",
+    "00001100",
+    "00011000",
+    "00000000",
+    "11111111",
+    "00011000"
+  ];
+
 
   var matrix = new five.Led.Matrix({
     pins: {
@@ -86,4 +97,13 @@ board.on("ready", function() {
       matrix.draw(hi);
     }
   });
+
+  this.repl.inject({
+    matrix: matrix,
+    // Type "moon()" in the REPL to
+    // display a "hi"!
+    moon: function() {
+      matrix.draw(moon);
+    }
+
 });
