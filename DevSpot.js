@@ -103,9 +103,7 @@ function next() {
   motion.on("motionstart", function() {
     console.log("motionstart");
     next();
-    smiley: function() {
-      matrix.draw(smiley);
-    }
+    smiley
   });
 
   // "motionend" events are fired following a "motionstart" event
