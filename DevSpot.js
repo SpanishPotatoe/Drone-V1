@@ -93,8 +93,6 @@ board.on("ready", function() {
       }
     }
 
-
-
   });
 
   // "motionend" events are fired following a "motionstart" event
