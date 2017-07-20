@@ -120,8 +120,6 @@ function next() {
   //   console.log(data);
   // });
 
-
-
   this.repl.inject({
     matrix: matrix,
     // Type "heart()" in the REPL to
