@@ -66,14 +66,22 @@ board.on("ready", function() {
     });
 
 
+matrix.on();
+
+
   // Create a new `motion` hardware instance.
   var motion = new five.Motion(7);
 
   // "calibrated" occurs once, at the beginning of a session,
   motion.on("calibrated", function() {
     console.log("calibrated");
+  });
 
-    matrix.on();
+  // "motionstart" events are fired when the "calibrated"
+  // proximal area is disrupted, generally by some form of movement
+  motion.on("motionstart", function() {
+    console.log("motionstart");
+
 
     var msg = "Hel lo Daniel".split("");
 
@@ -88,12 +96,6 @@ board.on("ready", function() {
     }
 
 
-  });
-
-  // "motionstart" events are fired when the "calibrated"
-  // proximal area is disrupted, generally by some form of movement
-  motion.on("motionstart", function() {
-    console.log("motionstart");
 
   });
 
