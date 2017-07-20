@@ -79,10 +79,6 @@ function next() {
   }
 }
 
-next();
-
-
-
   // Create a new `motion` hardware instance.
   var motion = new five.Motion(7);
 
@@ -95,6 +91,9 @@ next();
   // proximal area is disrupted, generally by some form of movement
   motion.on("motionstart", function() {
     console.log("motionstart");
+
+    next();
+
   });
 
   // "motionend" events are fired following a "motionstart" event
