@@ -102,9 +102,7 @@ function next() {
   // proximal area is disrupted, generally by some form of movement
   motion.on("motionstart", function() {
     console.log("motionstart");
-
     next();
-
   });
 
   // "motionend" events are fired following a "motionstart" event
