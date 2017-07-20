@@ -11,9 +11,7 @@
 
 //Contains : List of requirements - Coding behind Drone-V1
 
-//components : arduino board - wire board - 2 motors - 2 LED's
-
-// When in test silence other commands i.e. LED Hello world = active, LED = disabled
+//components : arduino board - LED Matrix - Motion sensor
 
 // Board setup
 var five = require("johnny-five");
@@ -69,7 +67,7 @@ board.on("ready", function() {
 
   matrix.on();
 
-  var msg = "Hel l o Daniel".split("");
+  var msg = "Hel lo Daniel".split("");
 
   // Display each letter for 1 second
   function next() {
