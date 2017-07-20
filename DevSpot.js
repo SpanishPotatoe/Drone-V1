@@ -75,11 +75,13 @@ function next() {
 
   if (c = msg.shift()) {
     matrix.draw(c);
-    setTimeout(next, 1000);
+    setTimeout(next, 800);
   }
 }
 
 next();
+
+
 
   // Create a new `motion` hardware instance.
   var motion = new five.Motion(7);
@@ -107,9 +109,6 @@ next();
   // motion.on("data", function(data) {
   //   console.log(data);
   // });
-
-
-
 
 
 
