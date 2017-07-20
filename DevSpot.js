@@ -79,6 +79,17 @@ board.on("ready", function() {
       "10100000"
     ];
 
+    var cloud = [
+        "00000000",
+        "00110000",
+        "00110100",
+        "00111100",
+        "00111100",
+        "01111110",
+        "00111100",
+        "00000000"
+      ];
+
     var matrix = new five.Led.Matrix({
       pins: {
         data: 2,
@@ -149,6 +160,9 @@ function next() {
     },
     nuvem: function() {
       matrix.draw(nuvem);
+    },
+    cloud: function() {
+      matrix.draw(cloud);
     }
   });
 
