@@ -90,6 +90,17 @@ board.on("ready", function() {
         "00000000"
       ];
 
+    var finger = [
+          "00000000",
+          "00010000",
+          "00010000",
+          "00111100",
+          "01111100",
+          "01111100",
+          "00111100",
+          "00011000"
+        ];
+
     var matrix = new five.Led.Matrix({
       pins: {
         data: 2,
@@ -163,6 +174,9 @@ function next() {
     },
     cloud: function() {
       matrix.draw(cloud);
+    },
+    finger: function() {
+      matrix.draw(finger);
     }
   });
 
