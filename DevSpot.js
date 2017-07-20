@@ -77,7 +77,7 @@ function next() {
     matrix.draw(c);
     setTimeout(next, 1000);
   }
-}
+};
 
   // Create a new `motion` hardware instance.
   var motion = new five.Motion(7);
