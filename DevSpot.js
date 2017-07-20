@@ -103,7 +103,6 @@ function next() {
   motion.on("motionstart", function() {
     console.log("motionstart");
     next();
-    setTimeout(smiley, 13000);
     matrix.draw(smiley)
 
   });
