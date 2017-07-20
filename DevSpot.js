@@ -68,6 +68,17 @@ board.on("ready", function() {
       "00000000"
     ];
 
+    var nuvem = [
+      "00010000",
+      "11110000",
+      "01101000",
+      "01000111",
+      "01000110",
+      "01100001",
+      "01100000",
+      "10100000"
+    ];
+
     var matrix = new five.Led.Matrix({
       pins: {
         data: 2,
@@ -135,6 +146,9 @@ function next() {
     },
     smiley: function() {
       matrix.draw(smiley);
+    }
+    nuvem: function() {
+      matrix.draw(nuvem);
     }
   });
 
