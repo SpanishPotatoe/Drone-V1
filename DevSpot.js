@@ -20,64 +20,102 @@ var board = new five.Board();
 //LED Matrix
 board.on("ready", function() {
 
-//  List of objects for Matrix
+
+  //  List of objects for Matrix
 
 
-  var heart = [
-    "01100110",
-    "10011001",
-    "10000001",
-    "10000001",
-    "01000010",
-    "00100100",
-    "00011000",
-    "00000000"
-  ];
+    var heart = [
+      "01100110",
+      "10011001",
+      "10000001",
+      "10000001",
+      "01000010",
+      "00100100",
+      "00011000",
+      "00000000"
+    ];
 
-  var hi = [
-    "10010000",
-    "10010010",
-    "11110000",
-    "10010010",
-    "10010010",
-    "00000000",
-    "00000000",
-    "00000000"
-  ];
+    var hi = [
+      "10010000",
+      "10010010",
+      "11110000",
+      "10010010",
+      "10010010",
+      "00000000",
+      "00000000",
+      "00000000"
+    ];
 
-  var moon = [
-    "00000000",
-    "00011000",
-    "00001100",
-    "00001100",
-    "00011000",
-    "00000000",
-    "11111111",
-    "00011000"
-  ];
+    var moon = [
+      "00000000",
+      "00011000",
+      "00001100",
+      "00001100",
+      "00011000",
+      "00000000",
+      "11111111",
+      "00011000"
+    ];
 
 
-  var matrix = new five.Led.Matrix({
-    pins: {
-      data: 2,
-      clock: 4,
-      cs: 3
-    }
+
+
+  // Create a new `motion` hardware instance.
+  var motion = new five.Motion(7);
+
+  // "calibrated" occurs once, at the beginning of a session,
+  motion.on("calibrated", function() {
+    console.log("calibrated");
   });
 
-  matrix.on();
+  // "motionstart" events are fired when the "calibrated"
+  // proximal area is disrupted, generally by some form of movement
+  motion.on("motionstart", function() {
+    console.log("motionstart");
 
-  var msg = "Hel lo Daniel".split("");
+    var matrix = new five.Led.Matrix({
+      pins: {
+        data: 2,
+        clock: 4,
+        cs: 3
+      }
+    });
 
-  // Display each letter for 1 second
-  function next() {
-    var c;
+    matrix.on();
 
-    if (c = msg.shift()) {
-      matrix.draw(c);
-      setTimeout(next, 1000);
+    var msg = "Hel lo Daniel".split("");
+
+    // Display each letter for 1 second
+    function next() {
+      var c;
+
+      if (c = msg.shift()) {
+        matrix.draw(c);
+        setTimeout(next, 800);
+      }
     }
-  }
+
+
+
+  });
+
+  // "motionend" events are fired following a "motionstart" event
+  // when no movement has occurred in X ms
+  motion.on("motionend", function() {
+    console.log("motionend");
+  });
+
+  // "data" events are fired at the interval set in opts.freq
+  // or every 25ms. Uncomment the following to see all
+  // motion detection readings.
+  // motion.on("data", function(data) {
+  //   console.log(data);
+  // });
+
+
+
+
+
 
   next();
 
@@ -96,34 +134,4 @@ board.on("ready", function() {
     }
   });
 
-});
-
-board.on("ready", function() {
-
-  // Create a new `motion` hardware instance.
-  var motion = new five.Motion(7);
-
-  // "calibrated" occurs once, at the beginning of a session,
-  motion.on("calibrated", function() {
-    console.log("calibrated");
-  });
-
-  // "motionstart" events are fired when the "calibrated"
-  // proximal area is disrupted, generally by some form of movement
-  motion.on("motionstart", function() {
-    console.log("motionstart");
-  });
-
-  // "motionend" events are fired following a "motionstart" event
-  // when no movement has occurred in X ms
-  motion.on("motionend", function() {
-    console.log("motionend");
-  });
-
-  // "data" events are fired at the interval set in opts.freq
-  // or every 25ms. Uncomment the following to see all
-  // motion detection readings.
-  // motion.on("data", function(data) {
-  //   console.log(data);
-  // });
 });
