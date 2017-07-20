@@ -57,7 +57,13 @@ board.on("ready", function() {
       "00011000"
     ];
 
-
+    var matrix = new five.Led.Matrix({
+      pins: {
+        data: 2,
+        clock: 4,
+        cs: 3
+      }
+    });
 
 
   // Create a new `motion` hardware instance.
@@ -72,14 +78,6 @@ board.on("ready", function() {
   // proximal area is disrupted, generally by some form of movement
   motion.on("motionstart", function() {
     console.log("motionstart");
-
-    var matrix = new five.Led.Matrix({
-      pins: {
-        data: 2,
-        clock: 4,
-        cs: 3
-      }
-    });
 
     matrix.on();
 
