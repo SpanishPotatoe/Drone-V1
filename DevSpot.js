@@ -70,7 +70,31 @@ matrix.on();
 var msg = "Hel lo Daniel".split("");
 
 // Display each letter for 1 second
+function next() {
+  var c;
 
+  if (c = msg.shift()) {
+    matrix.draw(c);
+    setTimeout(next, 1000);
+  }
+}
+
+next();
+
+  this.repl.inject({
+    matrix: matrix,
+    // Type "heart()" in the REPL to
+    // display a heart!
+    heart: function() {
+      matrix.draw(heart);
+    },
+    hi: function() {
+      matrix.draw(hi);
+    },
+    moon: function() {
+      matrix.draw(moon);
+    }
+  });
 
 });
 
@@ -89,6 +113,9 @@ board.on("ready", function() {
   motion.on("motionstart", function() {
     console.log("motionstart");
 
+    var msg = "Hel lo Daniel".split("");
+
+    // Display each letter for 1 second
     function next() {
       var c;
 
@@ -114,6 +141,7 @@ board.on("ready", function() {
           matrix.draw(moon);
         }
       });
+
 
   });
 
