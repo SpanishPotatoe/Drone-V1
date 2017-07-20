@@ -69,6 +69,15 @@ matrix.on();
 
 var msg = "Hel lo Daniel".split("");
 
+// Display each letter for 1 second
+function next() {
+  var c;
+
+  if (c = msg.shift()) {
+    matrix.draw(c);
+    setTimeout(next, 1000);
+  }
+}
 
   // Create a new `motion` hardware instance.
   var motion = new five.Motion(7);
@@ -82,20 +91,6 @@ var msg = "Hel lo Daniel".split("");
   // proximal area is disrupted, generally by some form of movement
   motion.on("motionstart", function() {
     console.log("motionstart");
-
-
-    // Display each letter for 1 second
-    function next() {
-      var c;
-
-      if (c = msg.shift()) {
-        matrix.draw(c);
-        setTimeout(next, 1000);
-      }
-    }
-
-
-
   });
 
   // "motionend" events are fired following a "motionstart" event
