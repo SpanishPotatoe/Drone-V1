@@ -86,7 +86,7 @@ function next() {
 
   if (c = msg.shift()) {
     matrix.draw(c);
-    setTimeout(next, 900);
+    setTimeout(next, 950);
   }
 }
 
