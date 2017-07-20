@@ -78,7 +78,7 @@ board.on("ready", function() {
 
 matrix.on();
 
-var msg = "Hel lo Daniel ".split(""), smiley;
+var msg = "Hel lo Daniel ".split("");
 
 // Display each letter for 1 second
 function next() {
@@ -103,6 +103,9 @@ function next() {
   motion.on("motionstart", function() {
     console.log("motionstart");
     next();
+    smiley: function() {
+      matrix.draw(smiley);
+    }
   });
 
   // "motionend" events are fired following a "motionstart" event
