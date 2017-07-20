@@ -82,7 +82,7 @@ var msg = "Hel lo Daniel".split("");
   // proximal area is disrupted, generally by some form of movement
   motion.on("motionstart", function() {
     console.log("motionstart");
-    
+
 
     // Display each letter for 1 second
     function next() {
@@ -90,7 +90,7 @@ var msg = "Hel lo Daniel".split("");
 
       if (c = msg.shift()) {
         matrix.draw(c);
-        setTimeout(next, 800);
+        setTimeout(next, 1000);
       }
     }
 
