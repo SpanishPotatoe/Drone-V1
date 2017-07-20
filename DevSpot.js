@@ -89,7 +89,7 @@ function next() {
     setTimeout(next, 1000);
   }
 }
-next();
+
 //Motion Sensor
 
   // Create a new `motion` hardware instance.
@@ -104,7 +104,7 @@ next();
   // proximal area is disrupted, generally by some form of movement
   motion.on("motionstart", function() {
     console.log("motionstart");
-
+    next();
   });
 
   // "motionend" events are fired following a "motionstart" event
