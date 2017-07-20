@@ -18,11 +18,21 @@ var five = require("johnny-five");
 var board = new five.Board();
 
 //LED Matrix
+
 board.on("ready", function() {
 
+  // Create a new `motion` hardware instance.
+  var motion = new five.Motion(7);
 
-  //  List of objects for Matrix
+  // "calibrated" occurs once, at the beginning of a session,
+  motion.on("calibrated", function() {
+    console.log("calibrated");
+  });
 
+  // "motionstart" events are fired when the "calibrated"
+  // proximal area is disrupted, generally by some form of movement
+  motion.on("motionstart", function() {
+    console.log("motionstart");
 
     var heart = [
       "01100110",
@@ -65,21 +75,21 @@ board.on("ready", function() {
       }
     });
 
-matrix.on();
+  matrix.on();
 
-var msg = "Hel lo Daniel".split("");
+  var msg = "Hel lo Daniel".split("");
 
-// Display each letter for 1 second
-function next() {
+  // Display each letter for 1 second
+  function next() {
   var c;
 
   if (c = msg.shift()) {
     matrix.draw(c);
     setTimeout(next, 1000);
   }
-}
+  }
 
-next();
+  next();
 
   this.repl.inject({
     matrix: matrix,
@@ -95,53 +105,6 @@ next();
       matrix.draw(moon);
     }
   });
-
-});
-
-board.on("ready", function() {
-
-  // Create a new `motion` hardware instance.
-  var motion = new five.Motion(7);
-
-  // "calibrated" occurs once, at the beginning of a session,
-  motion.on("calibrated", function() {
-    console.log("calibrated");
-  });
-
-  // "motionstart" events are fired when the "calibrated"
-  // proximal area is disrupted, generally by some form of movement
-  motion.on("motionstart", function() {
-    console.log("motionstart");
-
-    var msg = "Hel lo Daniel".split("");
-
-    // Display each letter for 1 second
-    function next() {
-      var c;
-
-      if (c = msg.shift()) {
-        matrix.draw(c);
-        setTimeout(next, 1000);
-      }
-    }
-
-    next();
-
-      this.repl.inject({
-        matrix: matrix,
-        // Type "heart()" in the REPL to
-        // display a heart!
-        heart: function() {
-          matrix.draw(heart);
-        },
-        hi: function() {
-          matrix.draw(hi);
-        },
-        moon: function() {
-          matrix.draw(moon);
-        }
-      });
-
 
   });
 
