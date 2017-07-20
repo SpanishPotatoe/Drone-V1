@@ -117,8 +117,6 @@ board.on("ready", function() {
 
 
 
-  next();
-
   this.repl.inject({
     matrix: matrix,
     // Type "heart()" in the REPL to
