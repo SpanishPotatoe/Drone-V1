@@ -78,7 +78,7 @@ board.on("ready", function() {
 
 matrix.on();
 
-var msg = "Hel lo Daniel ".split("");
+var msg = "    Hel lo Daniel ".split("");
 
 // Display each letter for 1 second
 function next() {
@@ -86,7 +86,7 @@ function next() {
 
   if (c = msg.shift()) {
     matrix.draw(c);
-    setTimeout(next, 950);
+    setTimeout(next, 1000);
   }
 }
 
