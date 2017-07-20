@@ -57,6 +57,17 @@ board.on("ready", function() {
       "00011000"
     ];
 
+    var smiley = [
+      "00000000",
+      "00100100",
+      "00100100",
+      "00000000",
+      "10000001",
+      "01100110",
+      "00011000",
+      "00000000"
+    ];
+
     var matrix = new five.Led.Matrix({
       pins: {
         data: 2,
@@ -123,6 +134,9 @@ function next() {
     },
     moon: function() {
       matrix.draw(moon);
+    },
+    smiley: function() {
+      matrix.draw(smiley);
     }
   });
 
