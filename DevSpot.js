@@ -65,8 +65,9 @@ board.on("ready", function() {
       }
     });
 
-
 matrix.on();
+
+var msg = "Hel lo Daniel".split("");
 
 
   // Create a new `motion` hardware instance.
@@ -81,9 +82,7 @@ matrix.on();
   // proximal area is disrupted, generally by some form of movement
   motion.on("motionstart", function() {
     console.log("motionstart");
-
-
-    var msg = "Hel lo Daniel".split("");
+    
 
     // Display each letter for 1 second
     function next() {
