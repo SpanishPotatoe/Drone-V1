@@ -90,6 +90,8 @@ function next() {
   }
 }
 
+//Motion Sensor
+
   // Create a new `motion` hardware instance.
   var motion = new five.Motion(7);
 
@@ -102,13 +104,14 @@ function next() {
   // proximal area is disrupted, generally by some form of movement
   motion.on("motionstart", function() {
     console.log("motionstart");
-    next();
+    matrix.draw(heart);
   });
 
   // "motionend" events are fired following a "motionstart" event
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
+    matrix.draw(moon);
   });
 
   // "data" events are fired at the interval set in opts.freq
