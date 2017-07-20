@@ -103,14 +103,13 @@ function next() {
   motion.on("motionstart", function() {
     console.log("motionstart");
     next();
-    matrix.draw(smiley)
-
   });
 
   // "motionend" events are fired following a "motionstart" event
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
+    matrix.draw(smiley)
   });
 
   // "data" events are fired at the interval set in opts.freq
