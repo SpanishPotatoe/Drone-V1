@@ -146,7 +146,7 @@ function next() {
     },
     smiley: function() {
       matrix.draw(smiley);
-    }
+    },
     nuvem: function() {
       matrix.draw(nuvem);
     }
