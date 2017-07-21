@@ -101,7 +101,7 @@ board.on("ready", function() {
           "11110011"
         ];
 
-    var Spiderman = [
+    var spiderman = [
               "11111111",
               "11111111",
               "11100111",
