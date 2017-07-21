@@ -111,6 +111,7 @@ board.on("ready", function() {
               "11100111",
               "11111111"
             ];
+
     var matrix = new five.Led.Matrix({
       pins: {
         data: 2,
