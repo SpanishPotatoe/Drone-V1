@@ -101,18 +101,6 @@ board.on("ready", function() {
           "11110011"
         ];
 
-    var spiderman = [
-              "11111111",
-              "11111111",
-              "11100111",
-              "11100111",
-              "11000011",
-              "11000011",
-              "11100111",
-              "11111111"
-            ];
-
-
     var matrix = new five.Led.Matrix({
       pins: {
         data: 2,
@@ -189,9 +177,6 @@ function next() {
     },
     finger: function() {
       matrix.draw(finger);
-    },
-    spiderman: function() {
-      matrix.draw(spiderman);
     }
   });
 
