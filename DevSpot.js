@@ -112,6 +112,17 @@ board.on("ready", function() {
               "01111110"
             ];
 
+    var clear = [
+                      "00000000",
+                      "00000000",
+                      "00000000",
+                      "00000000",
+                      "00000000",
+                      "00000000",
+                      "00000000",
+                      "00000000"
+                    ];
+
     var matrix = new five.Led.Matrix({
       pins: {
         data: 2,
@@ -191,6 +202,9 @@ function next() {
     },
     Spiderman: function() {
       matrix.draw(Spiderman);
+    },
+    clear: function() {
+      matrix.draw(clear);
     }
   });
 
