@@ -146,7 +146,7 @@ function next() {
     matrix.draw(c);
     setTimeout(next, 1000);
   } else {
-    msg.unshift("    Hel lo Daniel ")
+    msg.unshift("12")
     }
   }
 
@@ -168,7 +168,6 @@ function next() {
   motion.on("motionstart", function() {
     console.log("motionstart");
     reDo();
-    setTimeout(reDo, 10000);
   });
 
   // "motionend" events are fired following a "motionstart" event
