@@ -142,12 +142,13 @@ function next() {
   if (c = msg.shift()) {
     matrix.draw(c);
     setTimeout(next, 1000);
+  } else {
+    msg.unshift("1")
   }
 }
 
 function reDo() {
   msg.unshift("    Hel lo Daniel ")
-  setInterval(reDo, 20000); 
 }
 
 //Motion Sensor
