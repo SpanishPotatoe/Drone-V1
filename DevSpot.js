@@ -146,8 +146,8 @@ function next() {
 }
 
 function reDo() {
-  msg.unshift("1")
-
+  msg.unshift("    Hel lo Daniel ")
+  setInterval(reDo, 20000); 
 }
 
 //Motion Sensor
