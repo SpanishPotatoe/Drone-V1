@@ -136,6 +136,9 @@ matrix.on();
 var msg = "    Hel lo Daniel ".split("");
 
 // Display each letter for 1 second
+
+function reDo() {
+
 function next() {
   var c;
 
@@ -144,11 +147,11 @@ function next() {
     setTimeout(next, 1000);
   } else {
     msg.unshift("    Hel lo Daniel ")
+    }
   }
-}
 
-function reDo() {
-  setInterval(next, 20000);
+  setInterval(reDo,20000);
+
 }
 
 //Motion Sensor
