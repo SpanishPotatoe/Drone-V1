@@ -145,6 +145,10 @@ function next() {
   }
 }
 
+function reDo() {
+setInterval(next, 20000);
+}
+
 //Motion Sensor
 
   // Create a new `motion` hardware instance.
