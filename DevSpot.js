@@ -136,14 +136,14 @@ matrix.on();
 var msg = "    Hel lo Daniel ".split("");
 
 // Display each letter for 1 second
-setTimeout(function next() {
+function next() {
   var c;
 
-  if (c = msg.shift()) {
+  setTimeout(if (c = msg.shift()) {
     matrix.draw(c);
     setTimeout(next, 1000);
-  }
-}, 20000);
+  }, 20000);
+}
 
 //Motion Sensor
 
