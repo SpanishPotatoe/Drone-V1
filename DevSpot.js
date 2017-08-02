@@ -144,8 +144,9 @@ function next() {
     setTimeout(next, 1000);
   }
 }
+
 function reDo() {
-  msg.unshift()
+  msg.unshift(msg)
   setTimeout(next, 20000);
 }
 
