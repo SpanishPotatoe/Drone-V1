@@ -145,14 +145,6 @@ function next() {
   }
 }
 
-function reDo() {
-  var c;
-
-    if( c = msg.unshift()) {
-    setTimeout(next, 20000);
-  }
-}
-
 //Motion Sensor
 
   // Create a new `motion` hardware instance.
@@ -174,7 +166,6 @@ function reDo() {
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
-    reDo();
   });
 
   // "data" events are fired at the interval set in opts.freq
