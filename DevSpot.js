@@ -152,7 +152,7 @@ function next() {
 
   next();
 
-  setInterval(reDo, 10000);
+  setTimeout(reDo, 10000);
 
 }
 
