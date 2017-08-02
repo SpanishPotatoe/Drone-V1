@@ -146,7 +146,7 @@ function next() {
     matrix.draw(c);
     setTimeout(next, 1000);
   } else {
-    msg.unshift("    Hel lo Daniel ".split(""))
+    msg.unshift("    Hel lo Daniel ")
     }
   }
 
