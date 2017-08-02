@@ -146,7 +146,10 @@ function next() {
 }
 
 function reDo() {
-setInterval(next, 20000);
+    var c;
+
+  if (c = msg.unshift()) {
+setInterval(next, 1000);
 }
 
 //Motion Sensor
