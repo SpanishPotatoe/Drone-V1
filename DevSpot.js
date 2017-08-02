@@ -146,7 +146,7 @@ function next() {
     matrix.draw(c);
     setTimeout(next, 1000);
   } else {
-    msg.unshift(" "," "," "," ","H","e","l"," ","o","D","a","n","i","e","l"," ")
+    msg.unshift(" "," "," "," ","H","e","l"," ","l","o","D","a","n","i","e","l"," ")
     }
   }
 
