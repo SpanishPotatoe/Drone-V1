@@ -146,8 +146,11 @@ function next() {
 }
 
 function reDo() {
-  msg.unshift(msg)
-  setTimeout(next, 20000);
+  var c;
+
+    if( c = msg.unshift()) {
+    setTimeout(next, 20000);
+  }
 }
 
 //Motion Sensor
