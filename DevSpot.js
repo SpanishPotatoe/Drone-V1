@@ -139,10 +139,13 @@ var msg = "    Hel lo Daniel ".split("");
 function next() {
   var c;
 
-  setTimeout(if (c = msg.shift()) {
+  if (c = msg.shift()) {
     matrix.draw(c);
     setTimeout(next, 1000);
-  }, 20000);
+
+  msg.unshift()
+  setTimeout(next, 20000);
+  }
 }
 
 //Motion Sensor
