@@ -150,6 +150,8 @@ function next() {
     }
   }
 
+  next();
+
   setInterval(reDo,20000);
 
 }
