@@ -146,11 +146,13 @@ function next() {
     matrix.draw(c);
     setTimeout(next, 1000);
   } else {
-    msg.unshift("12")
+    msg.unshift("1" "2")
     }
   }
 
   next();
+
+  setInterval(reDo, 10000)
 }
 
 //Motion Sensor
