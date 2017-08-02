@@ -131,6 +131,7 @@ board.on("ready", function() {
       }
     });
 
+setTimeout(
 matrix.on();
 
 var msg = "    Hel lo Daniel ".split("");
@@ -143,7 +144,7 @@ function next() {
     matrix.draw(c);
     setTimeout(next, 1000);
   }
-}
+}, 20000);
 
 //Motion Sensor
 
