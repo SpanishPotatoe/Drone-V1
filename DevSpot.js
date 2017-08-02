@@ -143,7 +143,7 @@ setTimeout(function next() {
     matrix.draw(c);
     setTimeout(next, 1000);
   }
-};, 20000);
+}, 20000);
 
 //Motion Sensor
 
