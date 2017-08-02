@@ -131,13 +131,12 @@ board.on("ready", function() {
       }
     });
 
-setTimeout(
 matrix.on();
 
 var msg = "    Hel lo Daniel ".split("");
 
 // Display each letter for 1 second
-function next() {
+setTimeout(function next() {
   var c;
 
   if (c = msg.shift()) {
