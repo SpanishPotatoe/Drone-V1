@@ -151,9 +151,6 @@ function next() {
   }
 
   next();
-
-  setTimeout(reDo, 10000);
-
 }
 
 //Motion Sensor
@@ -171,6 +168,7 @@ function next() {
   motion.on("motionstart", function() {
     console.log("motionstart");
     reDo();
+    setTimeout(reDo, 10000);
   });
 
   // "motionend" events are fired following a "motionstart" event
