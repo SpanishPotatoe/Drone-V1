@@ -146,11 +146,7 @@ function next() {
 }
 
 function reDo() {
-    var c;
-
-  if (c = msg.unshift()) {
-    setInterval(next, 1000);
-  }
+  setInterval(next, 20000);
 }
 
 //Motion Sensor
@@ -174,7 +170,6 @@ function reDo() {
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
-    reDo();
   });
 
   // "data" events are fired at the interval set in opts.freq
