@@ -142,12 +142,12 @@ function next() {
   if (c = msg.shift()) {
     matrix.draw(c);
     setTimeout(next, 1000);
+  } else {
+    msg.unshift("    Hel lo Daniel ")
   }
+  
 }
 
-function reDo() {
-  setInterval(next, 20000);
-}
 
 //Motion Sensor
 
@@ -170,7 +170,6 @@ function reDo() {
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
-    reDo();
   });
 
   // "data" events are fired at the interval set in opts.freq
