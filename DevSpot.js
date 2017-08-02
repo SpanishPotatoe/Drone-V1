@@ -170,6 +170,7 @@ function reDo() {
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
+    reDo();
   });
 
   // "data" events are fired at the interval set in opts.freq
