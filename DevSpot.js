@@ -152,7 +152,7 @@ function next() {
 
   next();
 
-  setTimeout(reDo, 100000000000)
+  setTimeout(reDo, 10000)
 }
 
 //Motion Sensor
