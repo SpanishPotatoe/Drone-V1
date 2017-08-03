@@ -146,7 +146,7 @@ function next() {
   }
 }
 
- Function reDo() {
+ function reDo() {
 
 msg.unshift(" "," "," "," ","H","e","l"," ","l","o","D","a","n","i","e","l"," ")
 
