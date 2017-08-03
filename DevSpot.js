@@ -175,7 +175,7 @@ function next() {
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
-    setTimeout(reDo, 10000)
+    setTimeout(reDo, 60000)
   });
 
   // "data" events are fired at the interval set in opts.freq
