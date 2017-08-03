@@ -137,22 +137,21 @@ var msg = "    Hel lo Daniel ".split("");
 
 // Display each letter for 1 second
 
-function reDo() {
-
 function next() {
   var c;
 
   if (c = msg.shift()) {
     matrix.draw(c);
     setTimeout(next, 1000);
-  } else {
-    msg.unshift(" "," "," "," ","H","e","l"," ","l","o","D","a","n","i","e","l"," ")
-    }
   }
-
-  next();
-
 }
+
+ Function reDo() {
+
+msg.unshift(" "," "," "," ","H","e","l"," ","l","o","D","a","n","i","e","l"," ")
+
+ }
+
 
 //Motion Sensor
 
@@ -168,13 +167,14 @@ function next() {
   // proximal area is disrupted, generally by some form of movement
   motion.on("motionstart", function() {
     console.log("motionstart");
-    reDo();
+    next();
   });
 
   // "motionend" events are fired following a "motionstart" event
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
+    reDo();
     setTimeout(reDo, 60000)
   });
 
