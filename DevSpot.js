@@ -174,7 +174,7 @@ msg.unshift(" "," "," "," ","H","e","l"," ","l","o","D","a","n","i","e","l"," ")
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
-    setTimeout(reDo, 60000)
+    setInterval(reDo, 20000)
   });
 
   // "data" events are fired at the interval set in opts.freq
