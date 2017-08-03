@@ -102,15 +102,15 @@ board.on("ready", function() {
         ];
 
     var Spiderman = [
-            "01111110",
-            "01111110",
-            "01100110",
-            "10100101",
-            "10000001",
-            "01000010",
-            "01100110",
-            "01111110"
-            ];
+          "01111110",
+          "01111110",
+          "01100110",
+          "10100101",
+          "10000001",
+          "01000010",
+          "01100110",
+          "01111110"
+        ];
 
     var clear = [
             "00000000",
@@ -121,7 +121,10 @@ board.on("ready", function() {
             "00000000",
             "00000000",
             "00000000"
-                    ];
+          ];
+
+//Matrix Setup
+
 
     var matrix = new five.Led.Matrix({
       pins: {
@@ -148,11 +151,11 @@ function next() {
 
 function reDo() {
 
-msg.unshift(" "," "," "," ","H","e","l"," ","l","o","D","a","n","i","e","l"," ")
+msg.unshift(" "," "," "," ","H","e","l"," ","l","o"," ","D","a","n","i","e","l"," ")
 
  }
 
-setInterval(reDo, 64800000)
+setInterval(reDo, 43200000)
 
 //Motion Sensor
 
