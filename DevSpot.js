@@ -146,12 +146,13 @@ function next() {
   }
 }
 
- function reDo() {
+function reDo() {
 
 msg.unshift(" "," "," "," ","H","e","l"," ","l","o","D","a","n","i","e","l"," ")
 
  }
 
+setInterval(reDo, 20000)
 
 //Motion Sensor
 
@@ -174,7 +175,6 @@ msg.unshift(" "," "," "," ","H","e","l"," ","l","o","D","a","n","i","e","l"," ")
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
-    setInterval(reDo, 20000)
   });
 
   // "data" events are fired at the interval set in opts.freq
