@@ -155,7 +155,7 @@ msg.unshift(" "," "," "," ","H","e","l"," ","l","o"," ","D","a","n","i","e","l",
 
  }
 
-setInterval(reDo, 43200000)
+setInterval(reDo, 20000)
 
 //Motion Sensor
 
