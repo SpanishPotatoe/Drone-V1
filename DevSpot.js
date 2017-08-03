@@ -174,7 +174,6 @@ msg.unshift(" "," "," "," ","H","e","l"," ","l","o","D","a","n","i","e","l"," ")
   // when no movement has occurred in X ms
   motion.on("motionend", function() {
     console.log("motionend");
-    reDo();
     setTimeout(reDo, 60000)
   });
 
