@@ -157,7 +157,7 @@ msg.split("");
 
  }
 
-setInterval(reDo, 43200000)
+setInterval(reDo, 60000)
 
 //Motion Sensor
 
