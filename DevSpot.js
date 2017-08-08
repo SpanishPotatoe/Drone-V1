@@ -151,7 +151,9 @@ function next() {
 
 function reDo() {
 
-msg.unshift(" "," "," "," ","H","e","l"," ","l","o"," ","D","a","n","i","e","l"," ")
+msg.unshift("    Hel lo Daniel ")
+
+msg.split("");
 
  }
 
