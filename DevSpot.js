@@ -151,11 +151,11 @@ function next() {
 
 function reDo() {
 
-msg.unshift("    Hel lo Daniel ").split("");
+msg.unshift(" "," "," "," ","H","e","l"," ","l","o"," ","D","a","n","i","e","l"," ")
 
  }
 
-setInterval(reDo, 60000)
+setInterval(reDo, 43200000)
 
 //Motion Sensor
 
