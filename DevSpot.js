@@ -153,7 +153,7 @@ function reDo() {
 
 msg.unshift("    Hel lo Daniel ")
 
-msg.split("");
+msg.split("")
 
  }
 
